@@ -9,8 +9,8 @@ Whack-A-Mole game created in WPF
 
 # Images
 <p align="center">
-  <img src="/Whack-A-Mole/Images/image1.png">
-  <img src="/Whack-A-Mole/Images/image2.png">
+  <img width="500px" src="/Images/image1.png">
+  <img width="500px" src="Images/image2.png">
   
 # Download
 SourceForge: -
