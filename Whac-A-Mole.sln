@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whac-A-Mole", "Whac-A-Mole\Whac-A-Mole.csproj", "{F1016ADD-AD1D-40E5-857B-276C0120AE87}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Whack-A-Mole Setup", "Whack-A-Mole Setup\Whack-A-Mole Setup.vdproj", "{324EC881-E436-4CE1-BB17-E184168FDF72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1016ADD-AD1D-40E5-857B-276C0120AE87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1016ADD-AD1D-40E5-857B-276C0120AE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1016ADD-AD1D-40E5-857B-276C0120AE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1016ADD-AD1D-40E5-857B-276C0120AE87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{324EC881-E436-4CE1-BB17-E184168FDF72}.Debug|Any CPU.ActiveCfg = Debug
+		{324EC881-E436-4CE1-BB17-E184168FDF72}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {450C4D81-E06C-47D7-8EF3-A12AEFB0BBF0}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,116 @@
+﻿<Window x:Class="Whac_A_Mole.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Whac_A_Mole" ResizeMode="CanMinimize"
+        mc:Ignorable="d"
+        Cursor="{DynamicResource OpenHandCursor}"
+        Title="Whac-A-Mole" Height="550" Width="800" WindowStartupLocation="CenterScreen" IsTabStop="True" Icon="Images/wam-icon.png">
+
+    <Window.Resources>
+
+        <Cursor x:Key="OpenHandCursor" >
+            Images/hammer5.cur</Cursor>
+
+        <Style x:Key="buttonStyle" TargetType="Button">
+
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Background" Value="MediumAquamarine" />
+            <Setter Property="Foreground" Value="Transparent" />
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter x:Name="MyContentPresenter" 
+                                      Content="{TemplateBinding Content}"
+                                      HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Opacity" Value="1"/>
+                    <Setter Property="Foreground" Value="Transparent"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Window.Background>
+        <ImageBrush ImageSource="Images/background-image.jpg"/>
+    </Window.Background>
+    <Grid x:Name="boxCompleto" >
+        <Label Content="Whac-A-Mole" HorizontalAlignment="Left" Margin="246,24,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <Image x:Name="Mole1" HorizontalAlignment="Left" Height="138" Margin="39,192,0,0" VerticalAlignment="Top" Width="152" Source="Images/mole.png" StretchDirection="DownOnly" Visibility="Hidden" />
+        <Rectangle x:Name="ImgBlanco" HorizontalAlignment="Left" Height="158" Margin="4,320,0,0" Stroke="Black" VerticalAlignment="Top" Width="152" StrokeThickness="0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/bg-mole1.png" Stretch="Uniform"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="139" Margin="10,303,0,0" VerticalAlignment="Top" Width="159" Source="Images/dirt.png"/>
+        <Image x:Name="Mole2" HorizontalAlignment="Left" Height="138" Margin="339,204,0,0" VerticalAlignment="Top" Width="152" Source="Images/mole.png" StretchDirection="DownOnly" Visibility="Hidden" />
+        <Rectangle x:Name="ImgBlanco_Copy12" HorizontalAlignment="Left" Height="121" Margin="323,323,0,0" Stroke="Black" VerticalAlignment="Top" Width="131" StrokeThickness="0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/bg-mole22.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="136" Margin="306,296,0,0" VerticalAlignment="Top" Width="159" Source="Images/dirt.png"/>
+        <Image x:Name="Mole3" HorizontalAlignment="Left" Height="131" Margin="663,199,-23,0" VerticalAlignment="Top" Width="152" Source="Images/mole.png" StretchDirection="DownOnly" Visibility="Hidden" />
+        <Rectangle x:Name="ImgBlanco_Copy1" HorizontalAlignment="Left" Height="148" Margin="635,320,0,0" Stroke="Black" VerticalAlignment="Top" Width="147" StrokeThickness="0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/bg-mole3.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="136" Margin="633,296,0,0" VerticalAlignment="Top" Width="159" Source="Images/dirt.png"/>
+        <Image x:Name="Mole4" HorizontalAlignment="Left" Height="138" Margin="166,357,0,0" VerticalAlignment="Top" Width="152" Source="Images/mole.png" StretchDirection="DownOnly" Visibility="Hidden" />
+        <Rectangle x:Name="ImgBlanco_Copy2" HorizontalAlignment="Left" Height="48" Margin="145,471,0,0" Stroke="Black" VerticalAlignment="Top" Width="152" StrokeThickness="0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/bg-mole4.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="136" Margin="145,447,0,-64" VerticalAlignment="Top" Width="159" Source="Images/dirt.png"/>
+        <Rectangle x:Name="ImgBlanco_Copy3" HorizontalAlignment="Left" Height="76" Margin="323,444,0,-1" Stroke="Black" VerticalAlignment="Top" Width="131" StrokeThickness="0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/bg-mole555.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image x:Name="Mole5" HorizontalAlignment="Left" Height="138" Margin="339,357,0,0" VerticalAlignment="Top" Width="152" Source="Images/mole.png" StretchDirection="DownOnly" Visibility="Hidden" />
+
+        <Image HorizontalAlignment="Left" Height="62" Margin="302,463,0,-6" VerticalAlignment="Top" Width="182" Source="Images/dirt.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Images/dirt.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="Mole6" HorizontalAlignment="Left" Height="138" Margin="524,357,0,0" VerticalAlignment="Top" Width="152" Source="Images/mole.png" StretchDirection="DownOnly" Visibility="Hidden" />
+        <Rectangle x:Name="ImgBlanco_Copy4" HorizontalAlignment="Left" Height="48" Margin="496,471,0,0" Stroke="Black" VerticalAlignment="Top" Width="152" StrokeThickness="0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/bg-mole6.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="136" Margin="496,444,0,-61" VerticalAlignment="Top" Width="159" Source="Images/dirt.png"/>
+        <Button x:Name="btnStart" Content="Start Game" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="119" Click="btnStart_Click" Height="81" FontSize="20" BorderBrush="#FF90ADCB" Background="#FFACDCDE"/>
+        <Label x:Name="labelCount" Content="0" HorizontalAlignment="Left" Margin="685,72,0,0" VerticalAlignment="Top" FontSize="40"/>
+        <Button x:Name="button3" Style="{StaticResource buttonStyle}" Content="Button" HorizontalAlignment="Left" Margin="635,188,0,0" VerticalAlignment="Top" Width="157" Height="142" Background="{x:Null}" Click="button3_Click" IsEnabled="False" RenderTransformOrigin="6,0.652" FontSize="80"/>
+        <Button x:Name="button4" Style="{StaticResource buttonStyle}" Content="Button" HorizontalAlignment="Left" Margin="166,323,0,0" VerticalAlignment="Top" Width="131" Height="163" Background="{x:Null}" IsEnabled="False" FontSize="90" Click="button4_Click"/>
+        <Button x:Name="button5" Style="{StaticResource buttonStyle}" Content="Button" HorizontalAlignment="Left" Margin="306,347,0,0" VerticalAlignment="Top" Width="159" Height="163" Background="{x:Null}" Click="button5_Click" IsEnabled="False" FontSize="90"/>
+        <Button x:Name="button6" Style="{StaticResource buttonStyle}" Content="Button" HorizontalAlignment="Left" Margin="505,343,0,0" VerticalAlignment="Top" Width="150" Height="163" Background="{x:Null}" Click="button6_Click" IsEnabled="False" FontSize="90"/>
+        <Button x:Name="button2" Style="{StaticResource buttonStyle}" Content="Button" HorizontalAlignment="Left" Margin="306,162,0,0" VerticalAlignment="Top" Width="159" Height="180" Background="{x:Null}" Click="button2_Click" IsEnabled="False" RenderTransformOrigin="6,0.652" FontSize="80"/>
+        <Button x:Name="button1" Style="{StaticResource buttonStyle}" Content="Button" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top" Width="159" Height="162" Background="{x:Null}" Click="Button_Click_1" IsEnabled="False" RenderTransformOrigin="6,0.652" FontSize="80"/>
+        <Image x:Name="Splash1" HorizontalAlignment="Left" Height="100" Margin="29,182,0,0" VerticalAlignment="Top" Width="100" Source="Images/green-splash.png" Visibility="Hidden"/>
+        <Image x:Name="Splash2" HorizontalAlignment="Left" Height="100" Margin="331,178,0,0" VerticalAlignment="Top" Width="100" Source="Images/green-splash.png" Visibility="Hidden"/>
+        <Image x:Name="Splash3" HorizontalAlignment="Left" Height="100" Margin="664,178,0,0" VerticalAlignment="Top" Width="100" Source="Images/green-splash.png" Visibility="Hidden"/>
+        <Image x:Name="Splash4" HorizontalAlignment="Left" Height="100" Margin="161,335,0,0" VerticalAlignment="Top" Width="100" Source="Images/green-splash.png" Visibility="Hidden"/>
+        <Image x:Name="Splash5" HorizontalAlignment="Left" Height="100" Margin="339,342,0,0" VerticalAlignment="Top" Width="100" Source="Images/green-splash.png" Visibility="Hidden"/>
+        <Image x:Name="Splash6" HorizontalAlignment="Left" Height="100" Margin="530,342,0,0" VerticalAlignment="Top" Width="100" Source="Images/green-splash.png" Visibility="Hidden"/>
+        <Label Content="Score" HorizontalAlignment="Left" Margin="664,50,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="GameTimer" Content="10" HorizontalAlignment="Left" Margin="378,81,0,0" VerticalAlignment="Top" FontSize="40"/>
+
+
+
+    </Grid>
+</Window>
