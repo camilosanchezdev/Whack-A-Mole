@@ -2,7 +2,7 @@
 Whack-A-Mole game created in WPF
 
 # Features
-- WPF
+- WPF (.Net Framework)
 - C#
 - Lists
 - Animation (TranslateTransform)
