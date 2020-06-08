@@ -13,4 +13,4 @@ Whack-A-Mole game created in WPF
   <img width="500px" src="Images/image2.png">
   
 # Download
-SourceForge: -
+SourceForge: https://sourceforge.net/projects/whack-a-mole-game/
